@@ -207,6 +207,10 @@ if get_option('packagekit')
      meson.get_compiler('c').has_function('pk_offline_trigger_upgrade_with_flags', prefix: '#include <packagekit-glib2/packagekit.h>', dependencies: packagekit)
       conf.set('HAVE_PK_OFFLINE_WITH_FLAGS', '1')
   endif
+  if meson.get_compiler('c').links('''#include <packagekit-glib2/packagekit.h>
+      int main(void) { PkClientError err = PK_CLIENT_ERROR_DECLINED_INTERACTION; return 0; }''', dependencies: packagekit, name: 'PK_CLIENT_ERROR_DECLINED_INTERACTION')
+      conf.set('HAVE_PK_CLIENT_ERROR_DECLINED_INTERACTION', '1')
+  endif
 endif
 
 if get_option('eos_updater')
