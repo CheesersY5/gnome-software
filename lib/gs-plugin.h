@@ -45,7 +45,12 @@ struct _GsPluginClass
 							 gpointer	 user_data);
 	void			(*repository_changed)	(GsPlugin	*plugin,
 							 GsApp		*repository);
-	gpointer		 padding[24];
+	gboolean		(*ask_user_accepts)	(GsPlugin	*plugin,
+							 const gchar	*title,
+							 const gchar	*msg,
+							 const gchar	*details,
+							 const gchar	*accept_label);
+	gpointer		 padding[23];
 };
 
 typedef struct	GsPluginData	GsPluginData;
@@ -138,5 +143,10 @@ void		gs_plugin_update_cache_state_for_repository
 							 GsApp *repository);
 gboolean	gs_plugin_get_action_supported		(GsPlugin	*plugin,
 							 GsPluginAction	 action);
+gboolean	gs_plugin_ask_user_accepts		(GsPlugin	*plugin,
+							 const gchar	*title,
+							 const gchar	*msg,
+							 const gchar	*details,
+							 const gchar	*accept_label);
 
 G_END_DECLS
