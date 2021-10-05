@@ -1371,3 +1371,31 @@ gs_application_emit_install_resources_done (GsApplication *application,
 {
 	g_signal_emit (application, signals[INSTALL_RESOURCES_DONE], 0, ident, op_error, NULL);
 }
+
+static void
+gs_application_refresh_cb (GsPluginLoader *plugin_loader,
+			   GAsyncResult *result,
+			   GsApplication *self)
+{
+	gboolean success;
+	g_autoptr(GError) error = NULL;
+
+	success = gs_plugin_loader_job_action_finish (plugin_loader, result, &error);
+	if (!success &&
+	    !g_error_matches (error, GS_PLUGIN_ERROR, GS_PLUGIN_ERROR_CANCELLED))
+		g_warning ("failed to refresh: %s", error->message);
+}
+
+void
+gs_application_refresh (GsApplication *self)
+{
+	g_autoptr(GsPluginJob) plugin_job = NULL;
+	plugin_job = gs_plugin_job_newv (GS_PLUGIN_ACTION_REFRESH,
+					 "interactive", FALSE,
+					 "age", (guint64) 1,
+					 NULL);
+	gs_plugin_loader_job_process_async (self->plugin_loader, plugin_job,
+					    self->cancellable,
+					    (GAsyncReadyCallback) gs_application_refresh_cb,
+					    self);
+}

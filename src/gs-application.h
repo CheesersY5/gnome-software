@@ -24,3 +24,4 @@ void		 gs_application_emit_install_resources_done
 							(GsApplication *application,
 							 const gchar *ident,
 							 const GError *op_error);
+void		 gs_application_refresh			(GsApplication *self);
