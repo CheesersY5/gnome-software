@@ -13,6 +13,7 @@
 #include "gs-repos-dialog.h"
 
 #include "gnome-software-private.h"
+#include "gs-application.h"
 #include "gs-common.h"
 #include "gs-os-release.h"
 #include "gs-repo-row.h"
@@ -35,6 +36,8 @@ struct _GsReposDialog
 	GtkWidget	*content_page;
 	GtkWidget	*spinner;
 	GtkWidget	*stack;
+
+	gboolean	 changed;
 };
 
 G_DEFINE_TYPE (GsReposDialog, gs_repos_dialog, HDY_TYPE_WINDOW)
@@ -115,6 +118,8 @@ repo_enabled_cb (GObject *source,
 	}
 
 	g_debug ("finished %s repo %s", action_str, gs_app_get_id (install_remove_data->repo));
+
+	install_remove_data->dialog->changed = TRUE;
 }
 
 static void
@@ -709,6 +714,17 @@ gs_repos_dialog_dispose (GObject *object)
 	g_clear_object (&dialog->third_party);
 	g_clear_object (&dialog->cancellable);
 	g_clear_object (&dialog->settings);
+
+	if (dialog->changed) {
+		GApplication *app;
+
+		dialog->changed = FALSE;
+		g_debug ("Repository setup changed, calling refresh...");
+
+		app = g_application_get_default ();
+		if (app)
+			gs_application_refresh (GS_APPLICATION (app));
+	}
 
 	G_OBJECT_CLASS (gs_repos_dialog_parent_class)->dispose (object);
 }
