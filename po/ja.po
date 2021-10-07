@@ -9,14 +9,14 @@
 # sujiniku <sujinikusityuu@gmail.com>, 2018, 2020.
 # Shinichirou Yamada <yamada_strong_yamada_nice_64bit@yahoo.co.jp>, 2018.
 # sicklylife <translation@sicklylife.jp>, 2019-2020.
-#
+# Kaz Shibuya <sibuyakazokuu@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-software master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-software/issues\n"
 "POT-Creation-Date: 2020-08-19 14:58+0000\n"
 "PO-Revision-Date: 2020-08-26 21:15+0900\n"
-"Last-Translator: sicklylife <translation@sicklylife.jp>\n"
+"Last-Translator: Kaz Shibuya <translation@sicklylife.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
