@@ -854,17 +854,17 @@ msgstr ""
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:94
 msgid "No bloodshed"
-msgstr ""
+msgstr "流血はありません"
 
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:96
 msgid "Unrealistic bloodshed"
-msgstr ""
+msgstr "非現実な流血"
 
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:98
 msgid "Realistic bloodshed"
-msgstr ""
+msgstr "現実的な流血"
 
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:100
@@ -884,7 +884,7 @@ msgstr ""
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:114
 msgid "No references to alcohol"
-msgstr ""
+msgstr "アルコールへの言及はありません"
 
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:116
@@ -899,32 +899,32 @@ msgstr ""
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:124
 msgid "No references to illicit drugs"
-msgstr ""
+msgstr "違法な薬物への言及はありません"
 
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:126
 msgid "References to illicit drugs"
-msgstr ""
+msgstr "違法薬物を扱う言及"
 
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:128
 msgid "Use of illicit drugs"
-msgstr ""
+msgstr "違法薬物を使う描写があります"
 
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:134
 msgid "No references to tobacco products"
-msgstr ""
+msgstr "タバコを扱う言及はありません"
 
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:136
 msgid "References to tobacco products"
-msgstr ""
+msgstr "タバコを扱う言及"
 
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:138
 msgid "Use of tobacco products"
-msgstr ""
+msgstr "タバコの製品を使います"
 
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:144
@@ -949,7 +949,7 @@ msgstr ""
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:156
 msgid "Provocative references or depictions"
-msgstr ""
+msgstr "挑発的な言及や描写"
 
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:158
@@ -1024,12 +1024,12 @@ msgstr ""
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:198
 msgid "No advertising of any kind"
-msgstr ""
+msgstr "いかなる広告も含まれていません"
 
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:200
 msgid "Product placement"
-msgstr ""
+msgstr "プロダクトプレイスメント"
 
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:202
@@ -1099,17 +1099,17 @@ msgstr ""
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:241
 msgid "No way to talk with other users"
-msgstr ""
+msgstr "他のユーザと話すことはできません"
 
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:243
 msgid "Uncontrolled audio or video chat functionality between users"
-msgstr ""
+msgstr "ユーザ間で制御されていないオーディオまたはチャット"
 
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:250
 msgid "No sharing of social network usernames or email addresses"
-msgstr ""
+msgstr "ソーシャルネットワークでのユーザ名やメールアドレスなどを共有しない"
 
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:252
@@ -1290,11 +1290,11 @@ msgstr ""
 
 #: src/gs-content-rating.c:546
 msgid "General"
-msgstr ""
+msgstr "全般的"
 
 #: src/gs-content-rating.c:555
 msgid "ALL"
-msgstr ""
+msgstr "全年齢"
 
 #: src/gs-content-rating.c:559
 msgid "Adults Only"
@@ -1306,19 +1306,19 @@ msgstr ""
 
 #: src/gs-content-rating.c:563
 msgid "Teen"
-msgstr ""
+msgstr "13歳以上"
 
 #: src/gs-content-rating.c:565
 msgid "Everyone 10+"
-msgstr ""
+msgstr "10歳以上"
 
 #: src/gs-content-rating.c:567
 msgid "Everyone"
-msgstr ""
+msgstr "全年齢対象"
 
 #: src/gs-content-rating.c:569
 msgid "Early Childhood"
-msgstr ""
+msgstr "幼児向け"
 
 #. TRANSLATORS: this is a what we use in notifications if the app's name is unknown
 #: src/gs-dbus-helper.c:282
