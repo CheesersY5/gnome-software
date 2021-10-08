@@ -1114,17 +1114,17 @@ msgstr "ソーシャルネットワークでのユーザ名やメールアドレ
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:252
 msgid "Sharing social network usernames or email addresses"
-msgstr ""
+msgstr "ソーシャルネットワークでユーザー名や、メールアドレスを共有"
 
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:259
 msgid "No sharing of user information with third parties"
-msgstr ""
+msgstr "サードパーティとユーザー情報を共有しない"
 
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:261
 msgid "Checking for the latest application version"
-msgstr ""
+msgstr "新しいバージョンかチェックしている"
 
 #. TRANSLATORS: content rating description
 #: src/gs-content-rating.c:263
